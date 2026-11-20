@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft - Game Mania</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap-6.0.0-alpha.1-dist/bootstrap-6.0.0-alpha.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="menuCheck" class="menu-check" />
+
+    <nav class="navbar barra-topo">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">GAME MANIA</a>
+        <label for="menuCheck" class="botao-menu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+    </nav>
+
+    <label for="menuCheck" class="menu-fundo"></label>
+    <aside class="menu-lateral" id="menuPrincipal" aria-label="Menu principal">
+      <div class="menu-topo">
+        <h2>Para onde quer ir?</h2>
+        <label for="menuCheck" class="menu-fechar" aria-label="Fechar menu"
+          >X</label
+        >
+      </div>
+      <div class="menu-corpo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="jogos.html">Todos os jogos</a></li>
+          </ul>
+          <p>Conheça cada jogo</p>
+          <ul>
+            <li><a href="gta-v.html">GTA V</a></li>
+            <li><a href="forza-horizon.html">Forza Horizon</a></li>
+            <li>
+              <a href="minecraft.html" aria-current="page" class="atual"
+                >Minecraft</a
+              >
+            </li>
+            <li><a href="fortnite.html">Fortnite</a></li>
+            <li><a href="ea-sports-fc.html">EA Sports FC 26</a></li>
+          </ul>
+          <p>Participe</p>
+          <ul>
+            <li><a href="cadastro.html">Quero me cadastrar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="container conteudo">
+      <nav class="caminho mb-4" aria-label="Você está aqui">
+        <a href="index.html">Início</a> <span aria-hidden="true">/</span>
+        <a href="jogos.html">Jogos</a> <span aria-hidden="true">/</span>
+        <span>Minecraft</span>
+      </nav>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-12 lg:col-6">
+          <img
+            src="imagens/Minecraft.jpeg"
+            class="imagem-jogo"
+            alt="Ilustração relacionada a Minecraft"
+          />
+        </div>
+        <div class="col-12 lg:col-6">
+          <span class="badge etiqueta mb-3">Aventura e construção</span>
+          <h1 class="titulo-secao">Minecraft</h1>
+          <p class="texto-suave">
+            Use blocos para construir, explorar cavernas e criar seus próprios
+            mundos.
+          </p>
+          <div class="painel painel-info">
+            <p class="mb-2">
+              <strong>Plataformas:</strong> PC, PlayStation, Xbox e Nintendo
+            </p>
+            <p class="mb-0"><strong>Preço:</strong> R$ 89,90</p>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="jogos.html" class="btn botao-roxo">Voltar para os jogos</a>
+            <a href="cadastro.html" class="btn botao-contorno">Cadastro</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 md:col-8">
+            <p>Game Mania - Conectando você ao mundo dos games.</p>
+          </div>
+          <div class="col-12 md:col-4 md:text-end">
+            <p>Renato e Ryan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bootstrap-6.0.0-alpha.1-dist/bootstrap-6.0.0-alpha.1-dist/js/bootstrap.bundle.classico.js"></script>
+  </body>
+</html>

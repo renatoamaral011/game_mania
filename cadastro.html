@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Game Mania</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap-6.0.0-alpha.1-dist/bootstrap-6.0.0-alpha.1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="menuCheck" class="menu-check" />
+
+    <nav class="navbar barra-topo">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">GAME MANIA</a>
+        <label for="menuCheck" class="botao-menu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+    </nav>
+
+    <label for="menuCheck" class="menu-fundo"></label>
+    <aside class="menu-lateral" id="menuPrincipal" aria-label="Menu principal">
+      <div class="menu-topo">
+        <h2>Para onde quer ir?</h2>
+        <label for="menuCheck" class="menu-fechar" aria-label="Fechar menu"
+          >X</label
+        >
+      </div>
+      <div class="menu-corpo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="jogos.html">Todos os jogos</a></li>
+          </ul>
+          <p>Conheça cada jogo</p>
+          <ul>
+            <li><a href="gta-v.html">GTA V</a></li>
+            <li><a href="forza-horizon.html">Forza Horizon</a></li>
+            <li><a href="minecraft.html">Minecraft</a></li>
+            <li><a href="fortnite.html">Fortnite</a></li>
+            <li><a href="ea-sports-fc.html">EA Sports FC 26</a></li>
+          </ul>
+          <p>Participe</p>
+          <ul>
+            <li>
+              <a href="cadastro.html" aria-current="page" class="atual"
+                >Quero me cadastrar</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="container conteudo">
+      <div class="row justify-content-center">
+        <div class="col-12 lg:col-8">
+          <div class="painel painel-form">
+            <h1 class="titulo-secao">Cadastro</h1>
+            <p class="texto-suave">
+              Preencha os campos para demonstrar seu interesse nos jogos.
+            </p>
+            <form>
+              <div class="row g-3">
+                <div class="col-12 md:col-6">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    class="form-control"
+                    placeholder="Digite seu nome"
+                  />
+                </div>
+                <div class="col-12 md:col-6">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Digite seu e-mail"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="jogo" class="form-label">Jogo favorito</label>
+                  <select id="jogo" class="form-control">
+                    <option>GTA V</option>
+                    <option>Forza Horizon</option>
+                    <option>Minecraft</option>
+                    <option>Fortnite</option>
+                    <option>EA Sports FC 26</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="button"
+                    class="btn botao-roxo"
+                    onclick="alert('Cadastro demonstrativo preenchido!')"
+                  >
+                    Enviar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 md:col-8">
+            <p>Game Mania - Conectando você ao mundo dos games.</p>
+          </div>
+          <div class="col-12 md:col-4 md:text-end">
+            <p>Renato e Ryan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="bootstrap-6.0.0-alpha.1-dist/bootstrap-6.0.0-alpha.1-dist/js/bootstrap.bundle.classico.js"></script>
+  </body>
+</html>
